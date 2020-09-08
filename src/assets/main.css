@@ -188,33 +188,6 @@ select { /* 1 */
   text-transform: none;
 }
 
-
-/* tooltip */
-.tooltip .tooltip-text {
-  visibility: hidden;
-  text-align: center;
-  padding: 1px 20px;
-  position: absolute;
-  z-index: 100;
-  margin-left: auto;
-  
-}
-.tooltip1 .tooltip-text1 {
-  visibility: hidden;
-  text-align: center;
-  padding: 1px 20px;
-  position: absolute;
-  z-index: 100;
-  right:2px;
-  
-}
-.tooltip:hover .tooltip-text {
-  visibility: visible;
-}
-.tooltip1:hover .tooltip-text1 {
-  visibility: visible;
-}
-
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
@@ -588,7 +561,7 @@ iframe,
 embed,
 object {
   display: block;
- 
+  vertical-align: middle;
 }
 
 /**
@@ -91602,3 +91575,5 @@ video {
     animation: bounce 1s infinite;
   }
 }
+
+

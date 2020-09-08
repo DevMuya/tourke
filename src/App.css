@@ -1,0 +1,6 @@
+@media (max-width: 700px) {
+  .nav-hide {
+    display: none !important;
+    color: black !important;
+  }
+}
