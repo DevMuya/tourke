@@ -1,16 +1,17 @@
 import React, { Component } from "react";
-import Navbar from "./components/home components/navbar";
-import Tabmenu from "./components/home components/tabmenu";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Body from "./components/home components/body";
+import LogIn from "./components/log components/login";
+import Profile from './components/profile components/profile'
 
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <Navbar />
-        <Tabmenu />
-        <Body />
-      </div>
+      <Router>
+        <Route exact path="/" component={LogIn} />
+        <Route exact path="/home" component={Body} />
+        <Route exact path="/profile" component={Profile} />
+      </Router>
     );
   }
 }
